@@ -17,15 +17,6 @@ class Books(db.Model):
     author = db.Column('author', db.String(40))
     price = db.Column('price', db.Integer)
 
-    # def __str__(self):
-    #     return f"Book title: {self.title}, year: {self.year}"
-
-
-# რეგისტრაციისთვის იყო განკუთვნილი, მაგრამ ეს აღარ გავაკეთე
-# class Users(db.Model):
-#     id = db.Column('id', db.Integer, primary_key=True)
-#     username = db.Column('username', db.String(30))
-#     password = db.Column('password', db.String(40))
 
 
 @app.route('/')
