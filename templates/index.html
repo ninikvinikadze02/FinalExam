@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} Home Page {% endblock %}
+{% block content %}
+{% for i in books %}
+    <p>{{ i.title }}</p>
+{% endfor %}
+{% for message in messages %}
+    <div class="alert alert-success">{{ message }}</div>
+{% endfor %}
+{% endblock %}
