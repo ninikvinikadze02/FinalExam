@@ -17,7 +17,7 @@ class Books(db.Model):
     author = db.Column('author', db.String(40))
     price = db.Column('price', db.Integer)
 
-
+# https://github.com/ninikvinikadze02/FinalExam
 
 @app.route('/')
 def hello_world():
